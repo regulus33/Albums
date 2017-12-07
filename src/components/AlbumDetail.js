@@ -43,7 +43,7 @@ const styles = {
 
     thumbnailContainerStyle: {
       justifyContent: 'center',
-      martginLeft: 10,
+      marginLeft: 10,
       marginRight: 10
     },
 

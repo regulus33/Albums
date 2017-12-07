@@ -18,7 +18,7 @@ const  styles = {
     backgroundColor: '#fff',
     justifyContent: 'flex-start',
     borderColor: '#ddd',
-    positionRelative: 'relative'
+    position: 'relative'
   }
 }
 
