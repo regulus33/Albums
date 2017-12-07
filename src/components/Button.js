@@ -3,12 +3,15 @@ import { Text, TouchableOpacity } from 'react-native'
 //check docs for different kind of buttons, they are all prepended with 'touchable'
 //treeat it like a view tag, wrap other components in it
 //you can also bind event handlers
-const Button = () => {
+
+//you can destructure props as below
+//the parent is passing onPress={functionName}
+const Button = ({ onPress }) => {
 
   const { buttonStyle, textStyle } = styles
 
   return(
-    <TouchableOpacity style={buttonStyle}>
+    <TouchableOpacity onPress={onPress} style={buttonStyle}>
       <Text style={textStyle}>ClickMe!</Text>
     </TouchableOpacity>
     );
