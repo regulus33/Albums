@@ -6,13 +6,13 @@ import { Text, TouchableOpacity } from 'react-native'
 
 //you can destructure props as below
 //the parent is passing onPress={functionName}
-const Button = ({ onPress }) => {
+const Button = ({ onPress, children }) => {
 
   const { buttonStyle, textStyle } = styles
 
   return(
     <TouchableOpacity onPress={onPress} style={buttonStyle}>
-      <Text style={textStyle}>ClickMe!</Text>
+      <Text style={textStyle}>{children}</Text>
     </TouchableOpacity>
     );
 }
